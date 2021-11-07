@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Sell an item or service </title>
+</head>
+
+ <body>
+   <from>
+     <table>
+       <form action="connect.php" method = "post"> 
+
+<tr>
+<td>
+ Model :
+</td>
+<td> 
+ <input type="text" pLaceholder="Model" class="from-control"  id="Model" name="Model" required />
+
+</td>
+</tr>
+<tr><tr>
+  <td> 
+    Part Name:
+  </td>
+<td> <input type="text" pLaceholder="Part Name" class="from-control" id="partName" name="PartName" required />
+</td>
+  </tr></tr>
+<tr>
+ <td> 
+  Description:
+ </td>
+
+<td>
+<textarea name="Description" cols="40" rows="4" placeholder="say something about this Autopart.."></textarea>
+</td>
+</tr>
+<tr>
+<td>
+     Contact No :
+</td>
+<td> <input type="number" class="from-control" pLaceholder="**********" id="ContactNo" name="ContactNo"   required />
+</td>
+</tr>
+
+<tr>
+ <td> 
+Price : 
+</td>
+<td> 
+<input type="text"pLaceholder="Price" class="from-control" id="Price" name="Price" required/>
+</td>
+</tr>
+<tr>
+<tr>
+<td>
+<br>
+
+<input type="submit" value="Submit">
+
+
+</td></tr>
+</tr>
+</tr><div id="image">
+
+  
+
+  <from method="post" action="connect.php" enctype="multipart/from-data">
+    <input type="hidden" name="size" value="1000000">
+    <div>
+      <input type="file" name="image">
+    </div>
+    <div>
+      <textarea name="name" cols="40" rows="4" placeholder="say something about this Autopart.."></textarea>
+    </div>
+    <div>
+      <input type="submit" name="image" value="Upload image">
+    </div>
+
+
+</div>
+</table>
+</from>
+</body>
+</html>
